@@ -3,10 +3,110 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mon site</title>
+  <title>Youssef Handi | Site personnel</title>
+  <style>
+    :root{--max:1050px;--gap:24px;--text:#111;--muted:#555;--line:#e6e6e6;}
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.55;}
+    a{color:#0b57d0;text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .container{max-width:var(--max);margin:0 auto;padding:28px 18px;}
+    .grid{display:flex;gap:var(--gap);align-items:flex-start;}
+    aside{flex:0 0 290px;border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff;}
+    main{flex:1;border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff;}
+    .avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 14px;border:1px solid var(--line);}
+    .name{text-align:center;margin:0;font-size:28px;line-height:1.1;}
+    .role{text-align:center;margin:8px 0 0;color:var(--muted);}
+    .badge{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);}
+    .center{text-align:center;}
+    .quick{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px;}
+    nav{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px;}
+    section{padding-top:10px;margin-top:18px;border-top:1px solid var(--line);}
+    section:first-of-type{border-top:none;margin-top:0;padding-top:0;}
+    h2{margin:0 0 10px;font-size:20px;}
+    ul{margin:0;padding-left:18px;}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;}
+    @media (max-width: 900px){ .grid{flex-direction:column;} aside{width:100%;} }
+  </style>
 </head>
 <body>
-  <h1>Bonjour 👋</h1>
-  <p>Mon site GitHub Pages fonctionne.</p>
+  <div class="container">
+    <div class="grid">
+      <aside>
+        <!-- IMPORTANT: uploadez une image "profile.jpg" dans le dépôt -->
+        <img class="avatar" src="profile.jpg" alt="Photo de profil">
+
+        <h1 class="name">Youssef Handi</h1>
+        <p class="role">Étudiant / (votre domaine)</p>
+
+        <p class="center" style="margin:12px 0 0;">
+          <span class="badge">Votre ville, pays</span>
+        </p>
+
+        <ul class="quick">
+          <li><strong>Email :</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+          <li><strong>GitHub :</strong> <a href="https://github.com/You-06">github.com/You-06</a></li>
+          <li><strong>LinkedIn :</strong> <a href="#">Votre profil</a></li>
+          <li><strong>CV (PDF) :</strong> <a href="cv.pdf">Télécharger</a></li>
+        </ul>
+      </aside>
+
+      <main>
+        <nav>
+          <a href="#about">À propos</a>
+          <a href="#projects">Projets</a>
+          <a href="#education">Formation</a>
+          <a href="#skills">Compétences</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <section id="about">
+          <h2>À propos</h2>
+          <p>
+            Écrivez ici 3–5 lignes : qui vous êtes, ce que vous cherchez (stage/emploi),
+            vos domaines (data, web, sécurité, etc.).
+          </p>
+        </section>
+
+        <section id="projects">
+          <h2>Projets</h2>
+          <ul>
+            <li><strong>Projet 1</strong> — une phrase. <a href="https://github.com/You-06">Lien</a></li>
+            <li><strong>Projet 2</strong> — une phrase. <a href="#">Lien</a></li>
+          </ul>
+        </section>
+
+        <section id="education">
+          <h2>Formation</h2>
+          <ul>
+            <li>2023–2025 — … (école/université), …</li>
+            <li>2021–2023 — …</li>
+          </ul>
+        </section>
+
+        <section id="skills">
+          <h2>Compétences</h2>
+          <ul>
+            <li>Langages : Python, SQL, …</li>
+            <li>Outils : Git, GitHub, Excel, …</li>
+            <li>Autres : …</li>
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Le plus simple : <a href="mailto:you@example.com">you@example.com</a></p>
+        </section>
+
+        <footer>
+          Mis à jour le <span id="date"></span>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("date").textContent = new Date().toISOString().slice(0,10);
+  </script>
 </body>
 </html>
