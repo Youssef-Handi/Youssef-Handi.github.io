@@ -4,34 +4,121 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Youssef Handi | Site personnel</title>
+  <meta name="description" content="Site personnel de Youssef Handi : CV, projets, formation, compétences, contact." />
+
   <style>
-    :root{--max:1050px;--gap:24px;--text:#111;--muted:#555;--line:#e6e6e6;}
+    :root{
+      --max:1050px;
+      --gap:24px;
+      --text:#111;
+      --muted:#555;
+      --line:#e6e6e6;
+      --card:#fff;
+    }
     *{box-sizing:border-box;}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.55;}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.55;
+    }
     a{color:#0b57d0;text-decoration:none;}
     a:hover{text-decoration:underline;}
+
     .container{max-width:var(--max);margin:0 auto;padding:28px 18px;}
     .grid{display:flex;gap:var(--gap);align-items:flex-start;}
-    aside{flex:0 0 290px;border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff;}
-    main{flex:1;border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff;}
-    .avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 14px;border:1px solid var(--line);}
+
+    aside{
+      flex:0 0 290px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+      background:var(--card);
+    }
+    main{
+      flex:1;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:22px;
+      background:var(--card);
+      min-width:0;
+    }
+
+    .avatar{
+      width:160px;height:160px;border-radius:50%;
+      object-fit:cover;display:block;margin:0 auto 14px;
+      border:1px solid var(--line);
+      background:#fafafa;
+    }
     .name{text-align:center;margin:0;font-size:28px;line-height:1.1;}
     .role{text-align:center;margin:8px 0 0;color:var(--muted);}
-    .badge{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);}
+
+    .badge{
+      display:inline-block;
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+    }
     .center{text-align:center;}
-    .quick{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px;}
-    nav{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px;}
-    section{padding-top:10px;margin-top:18px;border-top:1px solid var(--line);}
-    section:first-of-type{border-top:none;margin-top:0;padding-top:0;}
+
+    .quick{
+      margin:16px 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:10px;
+    }
+
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:0 0 18px;
+    }
+    nav a{
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:14px;
+    }
+
+    section{
+      padding-top:10px;
+      margin-top:18px;
+      border-top:1px solid var(--line);
+    }
+    section:first-of-type{
+      border-top:none;
+      margin-top:0;
+      padding-top:0;
+    }
+
     h2{margin:0 0 10px;font-size:20px;}
     ul{margin:0;padding-left:18px;}
+
+    .pdfBox{
+      border:1px solid var(--line);
+      border-radius:12px;
+      overflow:hidden;
+      background:#fafafa;
+    }
+
     footer{margin-top:18px;color:var(--muted);font-size:13px;}
-    @media (max-width: 900px){ .grid{flex-direction:column;} aside{width:100%;} }
+
+    @media (max-width: 900px){
+      .grid{flex-direction:column;}
+      aside{width:100%;}
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <div class="grid">
+
       <aside>
         <!-- IMPORTANT: uploadez une image "profile.jpg" dans le dépôt -->
         <img class="avatar" src="profile.jpg" alt="Photo de profil">
@@ -40,14 +127,27 @@
         <p class="role">Post doctorate / (votre domaine)</p>
 
         <p class="center" style="margin:12px 0 0;">
-          <span class="badge">London, ontario, canada</span>
+          <span class="badge">London, Ontario, Canada</span>
         </p>
 
         <ul class="quick">
-          <li><strong>Email :</strong> <a href="mailto:youssef.handi@gmail.com">youssef.handi@gmai.com</a></li>
-          <li><strong>GitHub :</strong> <a href="https://github.com/You-06">github.com/You-06</a></li>
-          <li><strong>LinkedIn :</strong> <a href="#">Votre profil</a></li>
-          <li><strong>CV (PDF) :</strong> <a href="CV_yh.pdf">Télécharger</a></li>
+          <li><strong>Email :</strong>
+            <a href="mailto:youssef.handi@gmail.com">youssef.handi@gmail.com</a>
+          </li>
+
+          <li><strong>GitHub :</strong>
+            <a href="https://github.com/You-06" target="_blank" rel="noopener">github.com/You-06</a>
+          </li>
+
+          <li><strong>LinkedIn :</strong>
+            <a href="#" target="_blank" rel="noopener">Votre profil</a>
+          </li>
+
+          <!-- ✅ CV (nom exact: CV_yh.pdf) -->
+          <li><strong>CV (PDF) :</strong>
+            <a href="CV_yh.pdf" target="_blank" rel="noopener">Ouvrir</a> ·
+            <a href="CV_yh.pdf" download="Youssef_Handi_CV.pdf">Télécharger</a>
+          </li>
         </ul>
       </aside>
 
@@ -57,22 +157,27 @@
           <a href="#projects">Projets</a>
           <a href="#education">Formation</a>
           <a href="#skills">Compétences</a>
+          <a href="#cv">CV</a>
           <a href="#contact">Contact</a>
         </nav>
 
         <section id="about">
           <h2>À propos</h2>
           <p>
-            Écrivez ici 3–5 lignes : qui vous êtes, ce que vous cherchez (stage/emploi),
-            vos domaines (data, web, sécurité, etc.).
+            Écrivez ici 3–5 lignes : qui vous êtes, vos domaines, et ce que vous recherchez
+            (postdoc, collaboration, emploi, etc.).
           </p>
         </section>
 
         <section id="projects">
           <h2>Projets</h2>
           <ul>
-            <li><strong>Projet 1</strong> — une phrase. <a href="https://github.com/You-06">Lien</a></li>
-            <li><strong>Projet 2</strong> — une phrase. <a href="#">Lien</a></li>
+            <li><strong>Projet 1</strong> — une phrase.
+              <a href="https://github.com/You-06" target="_blank" rel="noopener">Lien</a>
+            </li>
+            <li><strong>Projet 2</strong> — une phrase.
+              <a href="#" target="_blank" rel="noopener">Lien</a>
+            </li>
           </ul>
         </section>
 
@@ -87,21 +192,48 @@
         <section id="skills">
           <h2>Compétences</h2>
           <ul>
-            <li>Langages : Python, SQL, …</li>
-            <li>Outils : Git, GitHub, Excel, …</li>
+            <li>Langages : Python, R, SQL, …</li>
+            <li>Outils : Git, GitHub, …</li>
             <li>Autres : …</li>
           </ul>
         </section>
 
+        <!-- ✅ Section CV intégrée dans la page -->
+        <section id="cv">
+          <h2>CV</h2>
+          <p>
+            <a href="CV_yh.pdf" target="_blank" rel="noopener">Ouvrir le CV en PDF</a> ·
+            <a href="CV_yh.pdf" download="Youssef_Handi_CV.pdf">Télécharger</a>
+          </p>
+
+          <div class="pdfBox">
+            <object data="CV_yh.pdf" type="application/pdf" width="100%" height="900">
+              <p style="padding:12px;">
+                Votre navigateur ne peut pas afficher le PDF ici.
+                <a href="CV_yh.pdf">Télécharger le CV</a>.
+              </p>
+            </object>
+          </div>
+
+          <p style="color:var(--muted); font-size:13px; margin-top:10px;">
+            Astuce : sur mobile (iPhone/Android), l’affichage intégré peut ne pas fonctionner.
+            Dans ce cas, utilisez “Ouvrir le CV en PDF”.
+          </p>
+        </section>
+
         <section id="contact">
           <h2>Contact</h2>
-          <p>Le plus simple : <a href="mailto:you@example.com">you@example.com</a></p>
+          <p>
+            Email : <a href="mailto:youssef.handi@gmail.com">youssef.handi@gmail.com</a><br />
+            GitHub : <a href="https://github.com/You-06" target="_blank" rel="noopener">https://github.com/You-06</a>
+          </p>
         </section>
 
         <footer>
           Mis à jour le <span id="date"></span>
         </footer>
       </main>
+
     </div>
   </div>
 
