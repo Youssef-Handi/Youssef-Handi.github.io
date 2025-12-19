@@ -101,13 +101,6 @@
     ul{margin:0;padding-left:18px;}
     li{margin:6px 0;}
 
-    .pdfBox{
-      border:1px solid var(--line);
-      border-radius:12px;
-      overflow:hidden;
-      background:#fafafa;
-    }
-
     footer{margin-top:18px;color:var(--muted);font-size:13px;}
 
     @media (max-width: 900px){
@@ -123,7 +116,7 @@
 
       <aside>
         <!-- Upload a file named "profile.jpg" in your repository -->
-        <img class="avatar" src="WhatsApp%20Image%202025-12-18%20at%2014.42.54.jpeg" alt="Profile photo">
+        <img class="avatar" src="profile.jpg" alt="Profile photo">
 
         <h1 class="name">Youssef Handi</h1>
         <p class="role">Ph.D. Researcher in Mathematics & Statistics</p>
@@ -142,7 +135,9 @@
           </li>
 
           <li><strong>LinkedIn:</strong>
-            <a href="#" target="_blank" rel="noopener">Your profile</a>
+            <a href="https://www.linkedin.com/in/youssef-handi-6484a9bb/" target="_blank" rel="noopener">
+              linkedin.com/in/youssef-handi-6484a9bb
+            </a>
           </li>
 
           <!-- CV file in your repo: CV_yh.pdf -->
@@ -159,7 +154,6 @@
           <a href="#projects">Publications</a>
           <a href="#education">Education</a>
           <a href="#skills">Skills</a>
-          <a href="#cv">CV</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -178,7 +172,7 @@
 
           <p>
             Before my Ph.D., I completed an M.Sc. in Computer Science and Applied Mathematics and worked as a research
-            assistant at Hydro‑Québec’s research institute (IREQ), designing Bayesian frameworks that combine expert
+            assistant at Hydro-Québec’s research institute (IREQ), designing Bayesian frameworks that combine expert
             opinions with performance data and implementing MCMC-based prediction tools for reliability.
             I also have applied experience in the financial sector as a data scientist, developing machine-learning
             models for credit risk classification, stress-testing models, and data pipelines with quality controls
@@ -186,54 +180,48 @@
           </p>
         </section>
 
-        <!-- You asked: add your articles in the Projects section.
-             I keep id="projects" but show "Publications". -->
         <section id="projects">
           <h2>Publications</h2>
 
-          <h3>Manuscripts (2025)</h3>
+          <h3>Manuscripts</h3>
           <ul>
             <li>
-              <strong>On Multivariate Binary Outcomes Copulas‑Regression Problem</strong><br />
-              Y. Handi, K. Oualkacha, M. Mesfioui — <em>Japanese Journal of Statistics and Data Science</em> (Published).
+              <strong>On Multivariate Binary Outcomes Copulas-Regression Problem</strong><br />
+              Y. Handi, K. Oualkacha, M. Mesfioui — <em>Japanese Journal of Statistics and Data Science</em>.
             </li>
             <li>
               <strong>Inference based on copulas for quantile and expectile in binary regression</strong><br />
-              Y. Handi, K. Oualkacha, M. Mesfioui — <em>Journal of Statistical Theory and Practice</em> (Revise &amp; Resubmit).
+              Y. Handi, K. Oualkacha, M. Mesfioui — <em>Journal of Statistical Theory and Practice</em>.
             </li>
           </ul>
 
-          <h3>Working Papers (2025)</h3>
+          <h3>Working Papers</h3>
           <ul>
             <li>
               <strong>Extension of multivariate binary outcomes copula regression to mixed variables</strong><br />
-              Y. Handi, K. Oualkacha, M. Mesfioui — Complete (preparing for submission).
+              Y. Handi, K. Oualkacha, M. Mesfioui.
             </li>
             <li>
               <strong>Extremile regression based on copulas</strong><br />
-              Y. Handi — In progress (≈ 80% complete).
+              Y. Handi.
             </li>
             <li>
-              <strong>Spatial Linear Multi‑Factor Mixing Model</strong><br />
-              Y. Handi — In progress (≈ 90% complete).
+              <strong>Spatial Linear Multi-Factor Mixing Model</strong><br />
+              Y. Handi.
             </li>
           </ul>
-
-          <p style="color:var(--muted); font-size:13px; margin-top:10px;">
-            Tip: you can add links to a preprint, DOI, or GitHub repository next to each paper later.
-          </p>
         </section>
 
         <section id="education">
           <h2>Education</h2>
           <ul>
             <li>
-              <strong>Ph.D. in Mathematics and Statistics</strong> (2021–2025) — Université du Québec à Montréal (UQAM)<br />
+              <strong>Ph.D. in Mathematics and Statistics</strong> — Université du Québec à Montréal (UQAM)<br />
               Thesis: <em>Copula-based Regression Frameworks for Multivariate Binary Outcomes</em><br />
               Supervisors: Prof. Karim Oualkacha &amp; Prof. Mhamed Mesfioui
             </li>
             <li>
-              <strong>M.Sc. in Computer Science and Applied Mathematics</strong> (2019–2021) — Université du Québec à Trois‑Rivières<br />
+              <strong>M.Sc. in Computer Science and Applied Mathematics</strong> — Université du Québec à Trois-Rivières<br />
               Thesis: <em>Combining Expert Opinions in Reliability using Bayesian Methods</em><br />
               Supervisor: Prof. Mhamed Mesfioui
             </li>
@@ -243,40 +231,20 @@
         <section id="skills">
           <h2>Skills</h2>
           <ul>
-            <li><strong>Statistics &amp; ML:</strong> Copulas, Bayesian inference, MCMC, regression, stress testing, credit risk modeling</li>
+            <li><strong>Research:</strong> Copulas, dependence modeling, regression for discrete/mixed outcomes, Bayesian inference, MCMC</li>
             <li><strong>R:</strong> VineCopula, rvinecopulib, copula, MASS, Matrix, RSpectra, RcppArmadillo</li>
-            <li><strong>Python:</strong> NumPy, SciPy, scikit‑learn, PyTorch, TensorFlow/Keras, vinecopulib</li>
-            <li><strong>Automation/DevOps:</strong> Docker, Singularity, GitHub Actions, reproducible pipelines (make/Snakemake/drake/targets)</li>
-            <li><strong>Languages:</strong> French (native), English (professional)</li>
+            <li><strong>Python:</strong> NumPy, SciPy, scikit-learn, PyTorch, TensorFlow/Keras, vinecopulib</li>
+            <li><strong>Tools:</strong> Git/GitHub, Docker/Singularity, reproducible workflows</li>
+            <li><strong>Languages:</strong> French, English</li>
           </ul>
-        </section>
-
-        <section id="cv">
-          <h2>CV</h2>
-          <p>
-            <a href="CV_yh.pdf" target="_blank" rel="noopener">Open the CV PDF</a> ·
-            <a href="CV_yh.pdf" download="Youssef_Handi_CV.pdf">Download</a>
-          </p>
-
-          <div class="pdfBox">
-            <object data="CV_yh.pdf" type="application/pdf" width="100%" height="900">
-              <p style="padding:12px;">
-                Your browser cannot display the PDF here.
-                <a href="CV_yh.pdf">Download the CV</a>.
-              </p>
-            </object>
-          </div>
-
-          <p style="color:var(--muted); font-size:13px; margin-top:10px;">
-            Note: on some mobile browsers, embedded PDFs may not display. Use “Open the CV PDF”.
-          </p>
         </section>
 
         <section id="contact">
           <h2>Contact</h2>
           <p>
             Email: <a href="mailto:youssef.handi@gmail.com">youssef.handi@gmail.com</a><br />
-            GitHub: <a href="https://github.com/You-06" target="_blank" rel="noopener">https://github.com/You-06</a>
+            GitHub: <a href="https://github.com/You-06" target="_blank" rel="noopener">https://github.com/You-06</a><br />
+            LinkedIn: <a href="https://www.linkedin.com/in/youssef-handi-6484a9bb/" target="_blank" rel="noopener">https://www.linkedin.com/in/youssef-handi-6484a9bb/</a>
           </p>
         </section>
 
