@@ -1,7 +1,7 @@
 ---
 title: "Default probability under measurement error"
 collection: publications
-category: submitted
+category: inprogress
 permalink: /publication/2026-04-01-default-probability-measurement-error
 date: 2026-04-01
 venue: 'In preparation for submission'

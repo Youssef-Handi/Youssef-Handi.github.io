@@ -1,7 +1,7 @@
 ---
 title: "Extension of copula-based regression for multivariate binary outcomes to mixed variables"
 collection: publications
-category: submitted
+category: inprogress
 permalink: /publication/2026-03-01-mixed-variables-copula-regression
 date: 2026-03-01
 venue: 'Manuscript completed; in preparation for submission'
